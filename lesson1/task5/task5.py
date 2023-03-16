@@ -6,5 +6,8 @@ if proceeds > costs:
     print(f"Рентабельность составила: {rent}")
     count_workers = int(input("Введите кол-во сотрудников:"))
     print(f"Прибыль фирмы на одного сотрудника составляет:{(proceeds-costs)/count_workers}")
+
+elif proceeds == costs:
+    print("Вы вышли в ноль")
 else:
     print(f"Ваш убыток составляет:{costs-proceeds}")
